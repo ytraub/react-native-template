@@ -1,7 +1,6 @@
-import { Pressable, View } from 'react-native';
-import { MoonStar } from 'lucide-react-native';
-import { Sun } from 'lucide-react-native';
+import { Pressable, View, Text } from 'react-native';
 
+import { MoonStar, Sun } from '~/lib/icons/all';
 import { setAndroidNavigationBar } from '~/lib/android-navigation-bar';
 import { useColorScheme } from '~/lib/useColorScheme';
 import { cn } from '~/lib/utils';
@@ -28,9 +27,13 @@ export function ThemeToggle() {
           )}
         >
           {isDarkColorScheme ? (
-            <MoonStar className='text-foreground' size={23} strokeWidth={1.25} />
+            <>
+              <MoonStar className='text-foreground' size={23} strokeWidth={1.25} />
+            </>
           ) : (
-            <Sun className='text-foreground' size={24} strokeWidth={1.25} />
+            <>
+              <Sun className='text-foreground' size={24} strokeWidth={1.25} />
+            </>
           )}
         </View>
       )}

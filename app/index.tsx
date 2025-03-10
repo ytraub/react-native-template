@@ -6,7 +6,7 @@ import Animated, {
   LayoutAnimationConfig
 } from 'react-native-reanimated';
 
-import { Info } from 'lucide-react-native';
+import { Info } from '~/lib/icons/all';
 import { Button } from '~/components/ui/button';
 import { Progress } from '~/components/ui/progress';
 import { Text } from '~/components/ui/text';
