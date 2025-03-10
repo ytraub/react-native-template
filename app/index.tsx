@@ -1,9 +1,20 @@
 import * as React from 'react';
 import { View } from 'react-native';
-import Animated, { FadeInUp, FadeOutDown, LayoutAnimationConfig } from 'react-native-reanimated';
-import { Info } from '~/lib/icons/Info';
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
+import Animated, {
+  FadeInUp,
+  FadeOutDown,
+  LayoutAnimationConfig
+} from 'react-native-reanimated';
+
+import { Info } from 'lucide-react-native';
 import { Button } from '~/components/ui/button';
+import { Progress } from '~/components/ui/progress';
+import { Text } from '~/components/ui/text';
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage
+} from '~/components/ui/avatar';
 import {
   Card,
   CardContent,
@@ -12,9 +23,11 @@ import {
   CardHeader,
   CardTitle,
 } from '~/components/ui/card';
-import { Progress } from '~/components/ui/progress';
-import { Text } from '~/components/ui/text';
-import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/ui/tooltip';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
+} from '~/components/ui/tooltip';
 
 const GITHUB_AVATAR_URI =
   'https://i.pinimg.com/originals/ef/a2/8d/efa28d18a04e7fa40ed49eeb0ab660db.jpg';
@@ -41,7 +54,7 @@ export default function Screen() {
             <CardDescription className='text-base font-semibold'>Scientist</CardDescription>
             <Tooltip delayDuration={150}>
               <TooltipTrigger className='px-2 pb-0.5 active:opacity-50'>
-                <Info size={14} strokeWidth={2.5} className='w-4 h-4 text-foreground/70' />
+                <Info size={14} strokeWidth={2.5} className='w-4 h-4 text-yellow-200' />
               </TooltipTrigger>
               <TooltipContent className='py-2 px-4 shadow'>
                 <Text className='native:text-lg'>Freelance</Text>
